@@ -1894,3 +1894,7 @@ h2.entry-title:hover > a {
 .footer-widgets .simple-social-icons ul li a:hover {
 	background-color: #666666 !important;
 }
+
+#page-id-864 .sidebar-bottom-right{
+    display:none !important;
+}

@@ -10,13 +10,6 @@
 
 //* Template Name: Podcast
 get_header(); ?>
-<?php if(is_page('864')) { ?>
-    <style>
-        .sidebar-bottom-right{
-            display:none !important;
-        }
-    </style>
-<?php } ?>
 
     <div id="primary" class="content-area">
         <main class="content" itemtype="http://schema.org/Blog" itemscope="itemscope" itemprop="mainContentOfPage" role="main">
