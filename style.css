@@ -100,7 +100,7 @@ input[type="search"] {
 .nav-secondary:before,
 .pagination:before,
 .site-container:before,
-.site-footer:before,
+#footer:before,
 #header:before,
 #inner:before,
 .site-inner:before,
@@ -118,7 +118,7 @@ input[type="search"] {
 .nav-secondary:after,
 .pagination:after,
 .site-container:after,
-.site-footer:after,
+#footer:after,
 #header:after,
 #inner:after,
 .site-inner:after,
@@ -1497,7 +1497,7 @@ li.comment {
 }
 
 .sidebar li {
-	border-bottom: 1px dotted #ddd;
+	border-bottom: 0px dotted #ddd;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
@@ -1517,10 +1517,10 @@ li.comment {
 .sidebar .widget {
 	background-color: #fff;
 	border-radius: 3px;
-	margin-bottom: 40px;
-	margin-bottom: 4rem;
-	padding: 40px;
-	padding: 4rem;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+	padding: 20px;
+	padding: 2rem;
 }
 
 .sidebar .enews-widget {
@@ -1597,7 +1597,8 @@ li.comment {
 }
 
 .footer-widgets .widget {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
 }
 
 .footer-widgets .search-form input:focus {
@@ -1607,7 +1608,7 @@ li.comment {
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
-.site-footer {
+#footer {
 	background-color: #fff;
 	color: #999;
 	font-size: 14px;
@@ -1617,14 +1618,17 @@ li.comment {
 	text-align: center;
 }
 
-.site-footer p {
+#footer p {
 	margin-bottom: 0;
 }
 
-.site-footer a {
+#footer a {
 	border-bottom: 1px solid #ddd;
 }
 
+.gototop {
+	display: none;
+}
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -1758,7 +1762,7 @@ li.comment {
 		padding: 4rem;
 	}
 
-	.site-footer {
+	#footer {
 		padding: 24px 0;
 		padding: 2.4rem 0;
 	}
@@ -1864,7 +1868,7 @@ li.comment {
 	color: #f15123;
 }
 
-.powerpress_player{
+.powerpress_player {
 	margin-top:60px!important;
 }
 
@@ -1880,4 +1884,14 @@ h2.entry-title:hover > a {
 	font-size: 16px !important;
 	font-size: 1.6rem !important;
 	color: #f15123 !important;
+}
+
+#sidebar .simple-social-icons ul li a,
+.footer-widgets .simple-social-icons ul li a {
+	background-color: #999999 !important;
+}
+
+#sidebar .simple-social-icons ul li a:hover,
+.footer-widgets .simple-social-icons ul li a:hover {
+	background-color: #666666 !important;
 }
