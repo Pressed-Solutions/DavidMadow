@@ -568,7 +568,7 @@ body.home #content {
 
 /* ### Primary Sidebar */
 
-.sidebar-primary {
+#primary #sidebar {
 	float: right;
 	width: 260px;
 }
