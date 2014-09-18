@@ -16,10 +16,6 @@ require_once( TEMPLATEPATH . '/lib/init.php' );
 /** Create additional color style options */
 add_theme_support( 'genesis-style-selector', array( 'lifestyle-blue' => 'Blue', 'lifestyle-charcoal' => 'Charcoal', 'lifestyle-gray' => 'Gray', 'lifestyle-green' => 'Green', 'lifestyle-pink' => 'Pink', 'lifestyle-purple' => 'Purple', 'lifestyle-tan' => 'Tan', 'lifestyle-teal' => 'Teal', 'lifestyle-yellow' => 'Yellow' ) );
 
-/** Child theme (do not remove) */
-define( 'CHILD_THEME_NAME', 'Lifestyle Theme' );
-define( 'CHILD_THEME_URL', 'http://www.studiopress.com/themes/lifestyle' );
-
 $content_width = apply_filters( 'content_width', 600, 430, 920 );
 
 /** Add new image sizes */
