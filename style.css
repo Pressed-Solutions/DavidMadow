@@ -102,6 +102,7 @@ input[type="search"] {
 .site-container:before,
 .site-footer:before,
 #header:before,
+#inner:before,
 .site-inner:before,
 .wrap:before {
 	content: " ";
@@ -119,6 +120,7 @@ input[type="search"] {
 .site-container:after,
 .site-footer:after,
 #header:after,
+#inner:after,
 .site-inner:after,
 .wrap:after {
 	clear: both;
@@ -501,12 +503,14 @@ th {
 /* ## Site Containers
 --------------------------------------------- */
 
+#inner,
 .site-inner,
 .wrap {
 	margin: 0 auto;
 	max-width: 960px;
 }
 
+#inner,
 .site-inner {
 	clear: both;
 	padding-top: 20px;
@@ -1627,6 +1631,7 @@ li.comment {
 
 @media only screen and (max-width: 1139px) {
 
+	#inner,
 	.site-inner,
 	.wrap {
 		max-width: 960px;
@@ -1678,6 +1683,7 @@ li.comment {
 	.sidebar-sidebar-content .content,
 	.sidebar-sidebar-content .content-sidebar-wrap,
 	#header .widget-area,
+	#inner,
 	.site-inner,
 	.title-area,
 	.wrap {
@@ -1693,6 +1699,7 @@ li.comment {
 		background-position: center top;
 	}
 
+	#inner,
 	.site-inner {
 		padding-left: 5%;
 		padding-right: 5%;
