@@ -189,7 +189,8 @@ a img {
 }
 
 p {
-	margin: 0 0 28px;
+	margin: 0 0 24px;
+	margin: 0 0 2.4rem;
 	padding: 0;
 }
 
@@ -269,7 +270,7 @@ h2 {
 
 h3 {
 	font-size: 24px;
-	font-size: 3rem;
+	font-size: 2.4rem;
 }
 
 h4 {
@@ -508,8 +509,8 @@ th {
 
 .site-inner {
 	clear: both;
-	padding-top: 40px;
-	padding-top: 4rem;
+	padding-top: 20px;
+	padding-top: 2rem;
 }
 
 /* ## Column Widths and Positions
@@ -1787,6 +1788,14 @@ li.comment {
 	}
 
 }
+
+/* # Other Customizations
+---------------------------------------------------------------------------------------------------- */
+
+#mc4wp-form-1 input[type="submit"] {
+	width: 267px;
+}
+
 .featured-box h4 {
 	font-size: 20px;
 	font-size: 2rem;
