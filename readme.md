@@ -3,6 +3,7 @@ This repository is a Genesis child theme for DavidMadow.com. I’m converting it
 
 #Notes for Move to Production
  - Copy [theme customizations](http://new.davidmadow.com/wp-admin/customize.php)
+ - Remove [Header Right widget](http://davidmadow.com/wp-admin/widgets.php)
 
 #Notes for Client
  - To change content above the list of podcasts, simply [edit that page](http://new.davidmadow.com/wp-admin/post.php?post=864&action=edit)

@@ -785,7 +785,7 @@ function genesis_custom_header_style() {
 
 	//* Header image CSS, if exists
 	if ( $header_image )
-		$output .= sprintf( '%s { background: url(%s) no-repeat !important; }', $header_selector, esc_url( $header_image ) );
+		$output .= sprintf( '%s { background: #333 url(%s) no-repeat center !important; }', $header_selector, esc_url( $header_image ) );
 
 	//* Header text color CSS, if showing text
 	if ( display_header_text() && $text_color !== get_theme_support( 'custom-header', 'default-text-color' ) )

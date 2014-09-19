@@ -1071,13 +1071,12 @@ div.gform_wrapper .gform_footer input[type="submit"] {
 /* Logo, hide text */
 
 .header-image #header .wrap {
-	background: url(images/logo.png) no-repeat left;
 	padding: 0;
 }
 
-.header-image .site-title a {
+.header-image #title a {
 	float: left;
-	min-height: 204px;
+	min-height: 200px;
 	width: 100%;
 }
 
