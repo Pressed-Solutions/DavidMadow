@@ -34,6 +34,23 @@ add_theme_support( 'custom-header', array(
     'flex-height'   => true
 ) );
 
+remove_action( 'wp_head', 'genesis_custom_header_style' );
+add_filter( 'genesis_seo_title', 'dm_genesis_replace_header_background_img', 10, 2 );
+/**
+ * Filter the genesis_seo_site_title function to insert an inline image for the logo instead of a background image
+ *
+ * The genesis_seo_site_title function is located in genesis/lib/structure/header.php
+ * @link http://thewebprincess.com/?p=3350
+ *
+ */
+function dm_genesis_replace_header_background_img( $title, $inside ){
+	$inline_logo = sprintf( '<a href="%s" title="%s"><img src="' . get_header_image() . '" title="%s" alt="%s"/></a>', trailingslashit( home_url() ), esc_attr( get_bloginfo( 'name' ) ), esc_attr( get_bloginfo( 'name' ) ), esc_attr( get_bloginfo( 'name' ) ) );
+
+    $title = str_replace( $inside, $inline_logo, $title );
+	return $title;
+}
+
+
 /** Remove full width content filter for bbPress */
 add_filter( 'bbp_genesis_force_full_content_width', '__return_false' );
 
