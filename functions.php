@@ -28,12 +28,17 @@ add_image_size( 'portfolio', 202, 140, TRUE );
 add_custom_background();
 
 /** Add support for custom header */
-add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 200 ) );
+add_theme_support( 'custom-header', array(
+    'width'         => 960,
+    'height'        => 200,
+    'flex-height'   => true
+) );
 
 /** Replace Genesis header with custom header */
 remove_action('genesis_header', 'genesis_do_header');
 remove_action('genesis_header', 'genesis_header_markup_open', 5);
 remove_action('genesis_header', 'genesis_header_markup_close', 15);
+remove_action( 'wp_head', 'genesis_custom_header_style' );
 function custom_header() {
     ?>
     <div id="header">

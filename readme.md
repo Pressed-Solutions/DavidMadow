@@ -6,4 +6,4 @@ This repository is a Genesis child theme for DavidMadow.com. I’m converting it
 
 #Notes for Client
  - To change content above the list of podcasts, simply [edit that page](http://new.davidmadow.com/wp-admin/post.php?post=864&action=edit)
- - To change the header image, go to [**Appearance** &gt; **Header**](http://new.davidmadow.com/wp-admin/themes.php?page=custom-header) and upload a new header. The size is hardcoded to 960x200px but could be made flexible if needed.
+ - To change the header image, go to [**Appearance** &gt; **Header**](http://new.davidmadow.com/wp-admin/themes.php?page=custom-header) and upload a new header. The suggested size is 960x200px but the height is flexible to allow for other dimensions.
