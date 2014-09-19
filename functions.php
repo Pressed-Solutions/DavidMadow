@@ -28,7 +28,7 @@ add_image_size( 'portfolio', 202, 140, TRUE );
 add_custom_background();
 
 /** Add support for custom header */
-add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 175 ) );
+add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 200 ) );
 
 /** Remove full width content filter for bbPress */
 add_filter( 'bbp_genesis_force_full_content_width', '__return_false' );
