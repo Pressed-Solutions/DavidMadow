@@ -28,54 +28,10 @@ add_image_size( 'portfolio', 202, 140, TRUE );
 add_custom_background();
 
 /** Add support for custom header */
-add_theme_support( 'genesis-custom-header', array( 'width' => 920, 'height' => 150 ) );
+add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 175 ) );
 
 /** Remove full width content filter for bbPress */
 add_filter( 'bbp_genesis_force_full_content_width', '__return_false' );
-
-/** Register default header options */
-register_default_headers( array(
-    'default' => array(
-        'url'            => CHILD_URL . '/images/header.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-thumb.png'
-    ),
-    'blue' => array(
-        'url'            => CHILD_URL . '/images/header-blue.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-blue-thumb.png'
-    ),
-    'charcoal' => array(
-        'url'             => CHILD_URL . '/images/header-charcoal.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-charcoal-thumb.png'
-    ),
-    'gray' => array(
-        'url'            => CHILD_URL . '/images/header-gray.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-gray-thumb.png'
-    ),
-    'green' => array(
-        'url'            => CHILD_URL . '/images/header-green.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-green-thumb.png'
-    ),
-    'pink' => array(
-        'url'            => CHILD_URL . '/images/header-pink.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-pink-thumb.png'
-    ),
-    'purple' => array(
-        'url'            => CHILD_URL . '/images/header-purple.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-purple-thumb.png'
-    ),
-    'tan' => array(
-        'url'            => CHILD_URL . '/images/header-tan.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-tan-thumb.png'
-    ),
-    'teal' => array(
-        'url'            => CHILD_URL . '/images/header-teal.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-teal-thumb.png'
-    ),
-    'yellow' => array(
-        'url'            => CHILD_URL . '/images/header-yellow.png',
-        'thumbnail_url'    => CHILD_URL . '/images/thumbs/header-yellow-thumb.png'
-    )
-) );
 
 /** Add support for post formats */
 //add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video' ) );
