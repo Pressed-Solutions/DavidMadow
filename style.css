@@ -1323,6 +1323,10 @@ p#title {
 	color: #fff;
 }
 
+.main-article.entry {
+	padding: 0;
+}
+
 /* ## Entry Meta
 --------------------------------------------- */
 
