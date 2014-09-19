@@ -1327,6 +1327,10 @@ p#title {
 	padding: 0;
 }
 
+.main-article .ssba {
+	display: none;
+}
+
 /* ## Entry Meta
 --------------------------------------------- */
 
