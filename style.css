@@ -1898,3 +1898,7 @@ h2.entry-title:hover > a {
 #page-id-864 .sidebar-bottom-right{
     display:none !important;
 }
+
+.main-article article {
+	display: none;
+}

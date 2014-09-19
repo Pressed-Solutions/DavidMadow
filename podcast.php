@@ -16,11 +16,11 @@ get_header(); ?>
 
         <?php
         /* The content loop */
-        while ( have_posts() ) : the_post();
-            echo '<article class="main-post">';
-            the_content();
-            echo '</article>';
-        endwhile;
+        while ( have_posts() ) : the_post(); ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class( 'main-article' ); ?>>;
+            <?php the_content(); ?>
+            </article>
+        <?php endwhile;
 
         /* The archive loop */
         $podcast_query = new WP_Query( array (
