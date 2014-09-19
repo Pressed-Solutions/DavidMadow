@@ -17,7 +17,7 @@ get_header(); ?>
         <?php
         /* The content loop */
         while ( have_posts() ) : the_post(); ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class( 'main-article' ); ?>>;
+            <article id="post-<?php the_ID(); ?>" <?php post_class( 'main-article' ); ?>>
             <?php the_content(); ?>
             </article>
         <?php endwhile;
