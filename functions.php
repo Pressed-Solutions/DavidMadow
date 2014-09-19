@@ -30,6 +30,23 @@ add_custom_background();
 /** Add support for custom header */
 add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 200 ) );
 
+/** Replace Genesis header with custom header */
+remove_action('genesis_header', 'genesis_do_header');
+remove_action('genesis_header', 'genesis_header_markup_open', 5);
+remove_action('genesis_header', 'genesis_header_markup_close', 15);
+function custom_header() {
+    ?>
+    <div id="header">
+        <div class="wrap">
+            <a href="<?php get_bloginfo('home'); ?>" alt="<?php echo get_bloginfo('name') .' - '. get_bloginfo('description'); ?>">
+            <img src="<?php get_header_image(); ?>" title="<?php echo get_bloginfo('name') .' - '. get_bloginfo('description'); ?>"></a>
+        </div>
+    </div>
+<?php }
+
+add_action('genesis_header', 'custom_header');
+
+
 /** Remove full width content filter for bbPress */
 add_filter( 'bbp_genesis_force_full_content_width', '__return_false' );
 
