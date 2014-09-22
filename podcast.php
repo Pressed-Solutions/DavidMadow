@@ -12,7 +12,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main class="content" itemtype="http://schema.org/Blog" itemscope="itemscope" itemprop="mainContentOfPage" role="main">
+    <main id="content" itemtype="http://schema.org/Blog" itemscope="itemscope" itemprop="mainContentOfPage" role="main">
 
         <?php
         /* The content loop */
