@@ -1535,6 +1535,17 @@ li.comment {
 	background-color: #333;
 }
 
+.widget-wrap .post {
+    border-bottom: none;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+.widget-wrap .post h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
