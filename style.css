@@ -1326,7 +1326,8 @@ p#title {
 	padding: 0;
 }
 
-.main-article #ssba {
+.main-article .ssba,
+.main-article #ssba{
 	display: none;
 }
 
