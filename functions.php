@@ -152,7 +152,10 @@ add_filter('pre_get_posts', 'exclude_category');
 // add image after blubrry player in archive pages
 function pressed_add_image( $output ) {
     $image_hardcode = '<img src="http://www.davidmadow.com/wp-content/uploads/2014/03/Slice-Your-Age150.jpg" style="float:left;padding-right:15px;padding-bottom:15px;margin-bottom:25px;" />';
-    $output = str_replace( '<p>', '<p>' . $image_hardcode, $output );
+    // applies only to podcast
+    if ( in_category( 'podcast' ) ) {
+        $output = str_replace( '<p>', '<p>' . $image_hardcode, $output );
+    }
     return $output;
 }
 add_filter( 'the_excerpt', 'pressed_add_image' );
