@@ -133,17 +133,24 @@ genesis_register_sidebar( array(
     'name'            => __( 'Portfolio', 'lifestyle' ),
     'description'    => __( 'This is the portfolio page template', 'lifestyle' ),
 ) );
+
 // Changing excerpt more
-       function new_excerpt_more($more) {
-       global $post;
-       return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
-       }
-       add_filter('excerpt_more', 'new_excerpt_more');
-       function exclude_category($query) {
-if ( $query->is_home() ) {
-$query->set('cat', '-37');
+function new_excerpt_more( $more ) {
+   global $post;
+   return '… <a href="'. get_permalink( $post->ID ) . '">' . 'Read More &raquo;' . '</a>';
 }
-return $query;
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function exclude_category($query) {
+    if ( $query->is_home() ) {
+        $query->set('cat', '-37');
+    }
+    return $query;
 }
 add_filter('pre_get_posts', 'exclude_category');
 
+// add image after blubrry player in archive pages
+function pressed_add_image( $output ) {
+    $output .= '<div style="margin-bottom:60px;display:block;"><img src="http://www.davidmadow.com/wp-content/uploads/2014/03/Slice-Your-Age150.jpg" style="float:left;padding-right:15px;padding-bottom:15px;margin-bottom:25px;" /></div>'
+}
+add_filter( 'the_excerpt', 'pressed_add_image' );
