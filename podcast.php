@@ -43,8 +43,10 @@ get_header(); ?>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
-    <?php echo do_shortcode('[powerpress]'); ?>
-                        <div style="margin-bottom:60px;display:block;"><img src="http://www.davidmadow.com/wp-content/uploads/2014/03/Slice-Your-Age150.jpg" style="float:left;padding-right:15px;padding-bottom:15px;margin-bottom:25px;" /></div><div style="margin-top:-30px;"><?php the_excerpt(); ?></div><div style="clear:both;"><p>&nbsp;</p></div>
+                        <?php echo do_shortcode('[powerpress]'); ?>
+                        <div style="margin-bottom:60px;display:block;"><img src="http://www.davidmadow.com/wp-content/uploads/2014/03/Slice-Your-Age150.jpg" style="float:left;padding-right:15px;padding-bottom:15px;margin-bottom:25px;" /></div>
+                        <div style="margin-top:-30px;"><?php the_excerpt(); ?></div>
+                        <div style="clear:both;"><p>&nbsp;</p></div>
                         <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
                     </div><!-- .entry-content -->
 
