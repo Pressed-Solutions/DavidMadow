@@ -43,7 +43,6 @@ get_header(); ?>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
-                        <?php echo do_shortcode('[powerpress]'); ?>
                         <div style="margin-top:-30px;"><?php the_excerpt(); ?></div>
                         <div style="clear:both;"><p>&nbsp;</p></div>
                         <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>

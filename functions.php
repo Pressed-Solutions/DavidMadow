@@ -151,6 +151,8 @@ add_filter('pre_get_posts', 'exclude_category');
 
 // add image after blubrry player in archive pages
 function pressed_add_image( $output ) {
-    $output .= '<div style="margin-bottom:60px;display:block;"><img src="http://www.davidmadow.com/wp-content/uploads/2014/03/Slice-Your-Age150.jpg" style="float:left;padding-right:15px;padding-bottom:15px;margin-bottom:25px;" /></div>'
+    $image_hardcode = '<img src="http://www.davidmadow.com/wp-content/uploads/2014/03/Slice-Your-Age150.jpg" style="float:left;padding-right:15px;padding-bottom:15px;margin-bottom:25px;" />';
+    $output = str_replace( '<p>', '<p>' . $image_hardcode, $output );
+    return $output;
 }
 add_filter( 'the_excerpt', 'pressed_add_image' );
