@@ -1326,7 +1326,7 @@ p#title {
 	padding: 0;
 }
 
-.main-article .ssba {
+.main-article #ssba {
 	display: none;
 }
 
@@ -1918,8 +1918,4 @@ h2.entry-title:hover > a {
 
 #page-id-864 .sidebar-bottom-right{
     display:none !important;
-}
-
-.main-article article {
-	display: none;
 }
